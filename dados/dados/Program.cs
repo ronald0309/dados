@@ -39,7 +39,11 @@ namespace dados
         /// <param name="laterales">Valor del lateral derecho</param>
         static void imprimirCaraFrontal(int caraFrontal, int laterales)
         {
+<<<<<<< Updated upstream
             
+=======
+
+>>>>>>> Stashed changes
             Console.WriteLine("############################");
             Console.WriteLine("#     #      #      #      #");
             Console.WriteLine("#  {0}  #  {1}   #  {2}   #   {3}  #", 7 - caraFrontal, 7 - laterales, caraFrontal, laterales);
@@ -57,8 +61,13 @@ namespace dados
 
 
         //funcion para generar los valores aleatorios del dado 
+<<<<<<< Updated upstream
         
       
+=======
+
+
+>>>>>>> Stashed changes
         static void randomDado(int frontal)
         {
             Random random = new Random();
@@ -84,7 +93,11 @@ namespace dados
         /// <param name="lateralI">Valor de la cara lateral izquierda del dado</param>
         /// <param name="frontal">Valor de la cara frontal del dado</param>
         /// <param name="atras">Valor de la cara tracera del dado</param>
+<<<<<<< Updated upstream
         static void sumatoria(int superior, int inferior, int lateralD, int lateralI,int frontal, int atras )
+=======
+        static void sumatoria(int superior, int inferior, int lateralD, int lateralI, int frontal, int atras)
+>>>>>>> Stashed changes
         {
             sumSup += superior;
             sumInf += inferior;
@@ -92,7 +105,11 @@ namespace dados
             sumLatIz += lateralI;
             sumFront += frontal;
             sumAtras += atras;
+<<<<<<< Updated upstream
             
+=======
+
+>>>>>>> Stashed changes
         }
         /// <summary>
         /// Se imprime la suma de cada cara del dado.
@@ -127,7 +144,7 @@ namespace dados
             while (Console.ReadKey().Key != ConsoleKey.Escape)
             {
                 //Se valida que la tecla precionada sea enter 
-                while ( Console.ReadKey().Key == ConsoleKey.Enter)
+                while (Console.ReadKey().Key == ConsoleKey.Enter)
                 {
                     //Se le asigna el valor de la cara frontal 
                     frontal = random.Next(1, 7);
