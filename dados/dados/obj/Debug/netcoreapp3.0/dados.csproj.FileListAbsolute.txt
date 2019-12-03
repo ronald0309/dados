@@ -1,0 +1,10 @@
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.exe
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.deps.json
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.runtimeconfig.json
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.runtimeconfig.dev.json
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.dll
+D:\Documents\GitHub\dados\dados\dados\bin\Debug\netcoreapp3.0\dados.pdb
+D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.AssemblyInfoInputs.cache
+D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.AssemblyInfo.cs
+D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.dll
+D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.pdb
