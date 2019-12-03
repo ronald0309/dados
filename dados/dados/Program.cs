@@ -42,25 +42,25 @@ namespace dados
         
         //funcion para generar los valores aleatorios del dado 
       
-        static void randomDado(int x2)
+        static void randomDado(int frontal)
         {
             Random random = new Random();
-            int x;
-            int x3;
+            int superior;
+            int lateral;
             do
             {
-                x = random.Next(1, 7);
-            } while (x == x2 || x == (7 - x2));
+                superior = random.Next(1, 7);
+            } while (superior == frontal || superior == (7 - frontal));
             do
             {
-                x3 = random.Next(1, 7);
-            } while (x == x3 || x2 == x3 || (7 - x) == x3 || (7 - x2) == x3);
-            Console.WriteLine("Valores del random {0},{1},{2}", x, x2, x3);
-            imprimirDado(x, x2, x3);
+                lateral = random.Next(1, 7);
+            } while (superior == lateral || frontal == lateral || (7 - superior) == lateral || (7 - frontal) == lateral);
+            Console.WriteLine("Valores del random {0},{1},{2}", superior, frontal, lateral);
+            imprimirDado(superior, frontal, lateral);
         }
         static void Main(string[] args)
         {
-            int x;
+            int frontal;
             Random random = new Random();
             // Se valida si se preciona un tecla diferente a la tecla escape 
             while (Console.ReadKey().Key != ConsoleKey.Escape)
@@ -68,13 +68,13 @@ namespace dados
                 //Se valida que la tecla precionada sea enter 
                 while ( Console.ReadKey().Key == ConsoleKey.Enter)
                 {
-                    //Se le asigna el valor del centro 
-                    x = random.Next(1, 7);
+                    //Se le asigna el valor de la cara frontal 
+                    frontal = random.Next(1, 7);
                     Console.WriteLine("Nueva Visualizacion");
-                    // se valida que el random funcione 
-                    randomDado(x);
-                    //se immprime un segundo dado 
-                    randomDado(x);
+                    // se llama a la funcion para generar los otros valores ramdom e imprimir el primer dado  
+                    randomDado(frontal);
+                    //se llama a la funcion para generar los otros valores ramdom e imprimir el segundo dado
+                    randomDado(frontal);
                    
                 }
             }
