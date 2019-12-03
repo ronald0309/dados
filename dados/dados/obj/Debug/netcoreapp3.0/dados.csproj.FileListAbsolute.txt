@@ -8,3 +8,4 @@ D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.AssemblyInfo
 D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.AssemblyInfo.cs
 D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.dll
 D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.pdb
+D:\Documents\GitHub\dados\dados\dados\obj\Debug\netcoreapp3.0\dados.csprojAssemblyReference.cache

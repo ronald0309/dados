@@ -38,38 +38,43 @@ namespace dados
             Console.WriteLine("             #      #");
             Console.WriteLine("             ########");
         }
+        
+        
         //funcion para generar los valores aleatorios del dado 
-        static void randomDado()
+      
+        static void randomDado(int x2)
         {
             Random random = new Random();
             int x;
-            int x2;
             int x3;
-            x = random.Next(1, 7);
             do
             {
-                x2 = random.Next(1, 7);
+                x = random.Next(1, 7);
             } while (x == x2 || x == (7 - x2));
             do
             {
                 x3 = random.Next(1, 7);
-            } while (x == x3 || x2 == x3|| (7-x) == x3|| (7-x2) == x3);
+            } while (x == x3 || x2 == x3 || (7 - x) == x3 || (7 - x2) == x3);
             Console.WriteLine("Valores del random {0},{1},{2}", x, x2, x3);
             imprimirDado(x, x2, x3);
         }
         static void Main(string[] args)
         {
+            int x;
+            Random random = new Random();
             // Se valida si se preciona un tecla diferente a la tecla escape 
             while (Console.ReadKey().Key != ConsoleKey.Escape)
             {
                 //Se valida que la tecla precionada sea enter 
                 while ( Console.ReadKey().Key == ConsoleKey.Enter)
                 {
+                    //Se le asigna el valor del centro 
+                    x = random.Next(1, 7);
                     Console.WriteLine("Nueva Visualizacion");
                     // se valida que el random funcione 
-                    randomDado();
-                    // Se imprime el dado.
-
+                    randomDado(x);
+                    //se immprime un segundo dado 
+                    randomDado(x);
                    
                 }
             }
