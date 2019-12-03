@@ -55,6 +55,7 @@ namespace dados
                 x3 = random.Next(1, 7);
             } while (x == x3 || x2 == x3|| (7-x) == x3|| (7-x2) == x3);
             Console.WriteLine("Valores del random {0},{1},{2}", x, x2, x3);
+            imprimirDado(x, x2, x3);
         }
         static void Main(string[] args)
         {
@@ -69,7 +70,7 @@ namespace dados
                     randomDado();
                     // Se imprime el dado.
 
-                    imprimirDado(1, 2, 3);
+                   
                 }
             }
         }
