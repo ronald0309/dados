@@ -40,9 +40,17 @@ namespace dados
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Nueva Visualizacion");
-            // Se imprime el dado.
-            imprimirDado(1, 2, 3);
+            // Se valida si se preciona un tecla diferente a la tecla escape 
+            while (Console.ReadKey().Key != ConsoleKey.Escape)
+            {
+                //Se valida que la tecla precionada sea enter 
+                while ( Console.ReadKey().Key == ConsoleKey.Enter)
+                {
+                    Console.WriteLine("Nueva Visualizacion");
+                    // Se imprime el dado.
+                    imprimirDado(1, 2, 3);
+                }
+            }
         }
     }
 }
