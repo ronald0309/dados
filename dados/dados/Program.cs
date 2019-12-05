@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace dados
 {
     class Program
@@ -54,11 +53,7 @@ namespace dados
             Console.WriteLine("             #      #");
             Console.WriteLine("             ########");
         }
-
-
         //funcion para generar los valores aleatorios del dado 
-
-
         static void randomDado(int frontal)
         {
             Random random = new Random();
@@ -92,7 +87,6 @@ namespace dados
             sumLatIz += lateralI;
             sumFront += frontal;
             sumAtras += atras;
-
         }
         /// <summary>
         /// Se imprime la suma de cada cara del dado.
@@ -122,6 +116,7 @@ namespace dados
         {
             Console.WriteLine("Precione enter para girar los dados.");
             int frontal;
+            int frontal2=0;
             Random random = new Random();
             // Se valida si se preciona un tecla diferente a la tecla escape 
             while (Console.ReadKey().Key != ConsoleKey.Escape)
@@ -129,13 +124,18 @@ namespace dados
                 //Se valida que la tecla precionada sea enter 
                 while (Console.ReadKey().Key == ConsoleKey.Enter)
                 {
-                    //Se le asigna el valor de la cara frontal 
+                    //Se le asigna el valor de la cara frontal del primer dado 
                     frontal = random.Next(1, 7);
-                    Console.WriteLine("Nueva Visualizacion");
+                    // se asigna el valor de la cara frontal del segundo dado y que sea distinta al la del primero 
+                    do
+                    {
+                        frontal2 = random.Next(1, 7);
+                    } while (frontal != 0 && frontal == frontal2);
+                        Console.WriteLine("Nueva Visualizacion");
                     // se llama a la funcion para generar los otros valores ramdom e imprimir el primer dado  
                     randomDado(frontal);
                     //se llama a la funcion para generar los otros valores ramdom e imprimir el segundo dado
-                    randomDado(frontal);
+                    randomDado(frontal2);
                     // se imprime las sumatorias
                     imprimirSuma();
                     // se limpian los valores de la sumatoria
